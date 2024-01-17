@@ -23,3 +23,29 @@
 
 </details>
 </details>
+
+<details>
+<summary>🚀 Lab 02</summary>
+
+<details>
+    <summary>⭐ Read java file</summary>
+
+![Class diagram](./Lab02/demo/parseFile.png 'Class diagram')
+
+</details>
+
+<details>
+    <summary>⭐ Read folder</summary>
+
+![Class diagram](./Lab02/demo/parseFolder.png 'Class diagram')
+
+</details>
+
+<details>
+    <summary>⭐ Reflection class</summary>
+
+![Class diagram](./Lab02/demo/reflection.png 'Class diagram')
+
+</details>
+
+</details>
