@@ -15,4 +15,11 @@
 ![Class diagram](./Lab01/ClassDiagram.bmp 'Class diagram')
 
 </details>
+
+<details>
+    <summary>⭐ Object diagram</summary>
+
+![Class diagram](./Lab01/ObjectDiagram.bmp 'Class diagram')
+
+</details>
 </details>
