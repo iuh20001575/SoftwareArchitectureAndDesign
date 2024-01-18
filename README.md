@@ -29,6 +29,20 @@
 ![Component diagram](./Lab01/ComponentDiagram.bmp 'Component diagram')
 
 </details>
+
+<details>
+    <summary>⭐ Package diagram</summary>
+
+![Package diagram](./Lab01/PackageDiagram.bmp 'Package diagram')
+
+</details>
+
+<details>
+    <summary>⭐ Deployment diagram</summary>
+
+![Deployment diagram](./Lab01/DeploymentDiagram.bmp 'Deployment diagram')
+
+</details>
 </details>
 
 <details>
