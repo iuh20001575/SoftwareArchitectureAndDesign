@@ -19,7 +19,14 @@
 <details>
     <summary>⭐ Object diagram</summary>
 
-![Class diagram](./Lab01/ObjectDiagram.bmp 'Class diagram')
+![Object diagram](./Lab01/ObjectDiagram.bmp 'Object diagram')
+
+</details>
+
+<details>
+    <summary>⭐ Component diagram</summary>
+
+![Component diagram](./Lab01/ComponentDiagram.bmp 'Component diagram')
 
 </details>
 </details>
@@ -30,21 +37,21 @@
 <details>
     <summary>⭐ Read java file</summary>
 
-![Class diagram](./Lab02/demo/parseFile.png 'Class diagram')
+![Parser file](./Lab02/demo/parseFile.png 'Parser file')
 
 </details>
 
 <details>
     <summary>⭐ Read folder</summary>
 
-![Class diagram](./Lab02/demo/parseFolder.png 'Class diagram')
+![Parser folder](./Lab02/demo/parseFolder.png 'Parser folder')
 
 </details>
 
 <details>
     <summary>⭐ Reflection class</summary>
 
-![Class diagram](./Lab02/demo/reflection.png 'Class diagram')
+![Reflection](./Lab02/demo/reflection.png 'Reflection')
 
 </details>
 
