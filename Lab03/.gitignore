@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+IronPdfEngine.2024.1.20.Windows.x64
+html_saved.pdf
+ironpdfengine.log
