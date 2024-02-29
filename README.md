@@ -181,3 +181,37 @@
 
 </details>
 </details>
+
+<br />
+
+<details>
+<summary>🚀 Lab 04</summary>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Requirement</summary>
+
+![Code](./Lab04/demo/requirement.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Result</summary>
+    - Analyze project, calculate distance from main sequence and calculate dependency measure using JDepend
+    <br />
+    - Generate reports automatically with Jdepend-ui
+    </details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Code</summary>
+
+![Code](./Lab04/demo/code.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Example result</summary>
+
+![Code](./Lab04/demo/result.jpeg 'Code')
+
+</details>
+</details>
