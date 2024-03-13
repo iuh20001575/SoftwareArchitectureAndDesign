@@ -1,4 +1,4 @@
-# Software Architecture and Design
+<h1 align="center">Software Architecture and Design</h1>
 
 <details>
 <summary>🚀 Lab 01 - UML Diagrams for ATM application</summary>
@@ -214,4 +214,46 @@
 ![Code](./Lab04/demo/result.jpeg 'Code')
 
 </details>
+</details>
+
+<br />
+
+<details>
+<summary>🚀 Lab 05</summary>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Publisher-Subscriber Model</summary>
+
+![Code](./Lab05/demo/pubsubmodel.png 'Publisher-Subscriber Model')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Publisher</summary>
+
+![Code](./Lab05/demo/publisher.png 'Publisher')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Subscriber</summary>
+
+![Code](./Lab05/demo/subscriber.png 'Subscriber')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Implement</summary>
+
+![Code](./Lab05/demo/implement.png 'Implement')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Result</summary>
+
+![Code](./Lab05/demo/result.png 'Result')
+
+</details>
+
 </details>
