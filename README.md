@@ -185,7 +185,7 @@
 <br />
 
 <details>
-<summary>🚀 Lab 04</summary>
+<summary>🚀 Lab 04 - Main of Sequence</summary>
 
 <details style="margin-left: 20px">
     <summary>⭐ Requirement</summary>
@@ -219,7 +219,7 @@
 <br />
 
 <details>
-<summary>🚀 Lab 05</summary>
+<summary>🚀 Lab 05 - Publisher-Subscriber Model</summary>
 
 <details style="margin-left: 20px">
     <summary>⭐ Publisher-Subscriber Model</summary>
@@ -256,4 +256,71 @@
 
 </details>
 
+</details>
+
+<br />
+
+<details>
+<summary>🚀 Lab 06 - Remote Ordering System Exercise (ActiveMQ)</summary>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Requirement</summary>
+
+A remote ordering system allows customers to place orders through an application (desktop/web). The order information is encrypted and sent to the processing system via a messaging service. The system checks the quantity of items in stock and decides whether to confirm or cancel the order. The customer will receive an email notification with the order status.
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Database</summary>
+
+![Code](./ActiveMQLabMvn/demo/Database.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Listen for messages</summary>
+    
+![Code](./ActiveMQLabMvn/demo/Listener.png 'Code')
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Encryption and decryption</summary>
+
+![Code](./ActiveMQLabMvn/demo/Encoding.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Architecture</summary>
+
+Layered Architecture
+
+![Code](./ActiveMQLabMvn/demo/LayeredArchitecture.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Implement</summary>
+
+Home Page
+
+![Code](./ActiveMQLabMvn/demo/HomePage.png 'Code')
+
+Cart Page
+
+![Code](./ActiveMQLabMvn/demo/Cart.jpeg 'Code')
+
+Checkout Page
+
+![Code](./ActiveMQLabMvn/demo/Checkout.jpeg 'Code')
+
+Order Success Mail
+
+![Code](./ActiveMQLabMvn/demo/OrderSuccess.png 'Code')
+
+Order Fail Mail
+
+![Code](./ActiveMQLabMvn/demo/OrderFail.png 'Code')
+
+</details>
 </details>
