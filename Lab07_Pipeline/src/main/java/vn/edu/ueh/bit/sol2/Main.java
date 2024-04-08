@@ -8,11 +8,13 @@ import java.util.function.Function;
 public class Main {
     public static void main(String[] args) {
 //        Derivative
-        String apply = init()
-                .andThen(derivative())
-                .andThen(getResult())
+        String apply = init() // Parse to polynomial
+                .andThen(derivative()) // Derivative of each polynomial item
+                .andThen(getResult()) // Join polynomial item
                 .apply("5x^3 - 6x^4 + 6x^9 + 7x + 2");
 
+        System.out.println("============================================");
+        System.out.println("Polynomial: " + "5x^3 - 6x^4 + 6x^9 + 7x + 2");
         System.out.println("Derivative result: " + apply);
     }
 

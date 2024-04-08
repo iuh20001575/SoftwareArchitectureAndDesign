@@ -8,12 +8,17 @@ import java.util.AbstractMap;
 public class Main {
     public static void main(String[] args) {
         // Calculate polynomial value
-        AbstractMap.SimpleImmutableEntry<String, Integer> entry = new AbstractMap.SimpleImmutableEntry<>("5x^3 - 6x^4 + 6x^9 + 7x + 2", 3);
+        String sPolynomial = "5x^3 - 6x^4 + 6x^9 + 7x + 2";
+        int x = 3;
+        AbstractMap.SimpleImmutableEntry<String, Integer> input = new AbstractMap.SimpleImmutableEntry<>(sPolynomial, x);
 
-        Double process = Pipeline.of(init())
-                .withNextPipe(calcPolynomial())
-                .process(entry);
+        Double process = Pipeline.of(init()) // Parse to polynomial
+                .withNextPipe(calcPolynomial()) // Calc of each polynomial item
+                .process(input);
 
+        System.out.println("============================================");
+        System.out.println("Polynomial: " + sPolynomial);
+        System.out.println("x = " + x);
         System.out.println("Result of polynomial: " + process);
     }
 

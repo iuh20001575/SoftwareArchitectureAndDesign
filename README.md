@@ -324,3 +324,52 @@ Order Fail Mail
 
 </details>
 </details>
+
+<br />
+
+<details>
+<summary>🚀 Lab 07 - Pipeline Architecture Style (ActiveMQ)</summary>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Polynomial derivative</summary>
+
+![Code](./Lab07_Pipeline/demo/derivative.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Calculate polynomial value</summary>
+
+![Code](./Lab07_Pipeline/demo/calc.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Invoice process</summary>
+
+![Code](./Lab07_PipelineInvoice/demo/process.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Structure project</summary>
+
+![Code](./Lab07_PipelineInvoice/demo/stucture.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Implement</summary>
+
+![Code](./Lab07_PipelineInvoice/demo/implement.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Full code</summary>
+
+![Code](./Lab07_PipelineInvoice/demo/fullcode.png 'Code')
+
+</details>
+
+</details>
