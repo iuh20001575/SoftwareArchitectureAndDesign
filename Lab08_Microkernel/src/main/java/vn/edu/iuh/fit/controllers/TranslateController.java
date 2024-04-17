@@ -18,17 +18,19 @@ public class TranslateController {
     @GetMapping({"", "/"})
     public String index(Model model) {
         model.addAttribute("word", new Word());
+        model.addAttribute("language", "en-vn");
 
         return "index";
     }
 
     @PostMapping("/translate")
-    public String translate(Model model, @RequestParam String language, @RequestParam String word, @RequestParam String destination) {
+    public String translate(Model model, @RequestParam String language, @RequestParam String word) {
         AtomicReference<Word> result = new AtomicReference<>(new Word());
 
         PluginManager.PLUGINS.values().forEach(clazz -> {
-            if (clazz.name().equalsIgnoreCase(String.format("%s-%s", language, destination))) {
+            if (clazz.name().equalsIgnoreCase(language)) {
                 Word lookup = ((Language) clazz).lookup(word);
+                System.out.println("lookup: "+ lookup);
 
                 if (lookup != null) {
                     result.set(lookup);
@@ -39,6 +41,8 @@ public class TranslateController {
         });
 
         model.addAttribute("word", result.get());
+        model.addAttribute("language", language);
+        System.out.println(result.get());
 
         return "index";
     }

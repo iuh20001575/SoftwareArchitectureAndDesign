@@ -1,4 +1,5 @@
 rootProject.name = 'kt1004'
 include 'core'
 include 'EnglishToVietnamese'
+include 'VietnameseToEnglish'
 

@@ -45,7 +45,8 @@ public class PluginManager {
                         }
                         Constructor<?> constructor = clazz.getConstructor();
                         Plugin instance = (Plugin) constructor.newInstance();
-                        PLUGINS.put(interfaceClass, instance);
+
+                        PLUGINS.put(clazz, instance);
                     }
                 }
             } catch (NoSuchMethodException | InstantiationException | InvocationTargetException |

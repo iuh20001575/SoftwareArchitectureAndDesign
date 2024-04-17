@@ -20,13 +20,15 @@ public class Kt1004Application {
 
             properties.forEach((key, value) -> {
                 PluginManager.loadPlugin(value.toString());
+            });
 
-                Language language = PluginManager.get(Language.class);
-
-                try {
-                    language.readData();
-                } catch (FileNotFoundException e) {
-                    throw new RuntimeException(e);
+            PluginManager.PLUGINS.values().forEach(clazz -> {
+                if (Language.class.isAssignableFrom(clazz.getClass())) {
+                    try {
+                        ((Language) clazz).readData();
+                    } catch (FileNotFoundException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             });
         } catch (Exception ex) {

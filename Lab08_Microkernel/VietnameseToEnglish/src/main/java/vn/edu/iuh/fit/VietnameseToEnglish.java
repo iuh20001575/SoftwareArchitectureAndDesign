@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class EnglishToVietnamese implements Language {
+public class VietnameseToEnglish implements Language {
     private final Map<String, Word> map = new TreeMap<>();
 
     @Override
@@ -17,13 +17,13 @@ public class EnglishToVietnamese implements Language {
 
     @Override
     public void readData() throws FileNotFoundException {
-        Map<String, Word> parse = new InformatikParse().parse("dictionary/anhviet109K.dict");
+        Map<String, Word> parse = new InformatikParse().parse("dictionary/vietanh.dict");
 
         map.putAll(parse);
     }
 
     @Override
     public String name() {
-        return "en-vn";
+        return "vn-en";
     }
 }

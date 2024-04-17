@@ -35,7 +35,8 @@
         <form method="post" action="/translate" class="d-flex flex-1 translate">
             <div class="translate-item">
                 <select name="language" class="form-select" aria-label="Default select example">
-                    <option value="en">Tiếng anh</option>
+                    <option th:checked="${language.equalsIgnoreCase('en-vn') ? checked : null}" value="en-vn" >Tiếng anh - Tiếng Việt</option>
+                    <option th:checked="${language.equalsIgnoreCase('vn-en') ? checked : null}" value="vn-en">Tiếng Việt - Tiếng Anh</option>
                 </select>
                 <label class="d-flex">
                     <input name="word" class="form-control" th:field="${word.word}">
@@ -44,9 +45,6 @@
                 <button type="submit" class="btn btn-primary">Dịch</button>
             </div>
             <div class="translate-item">
-                <select name="destination" class="form-select" aria-label="Default select example">
-                    <option value="vn">Tiếng Việt</option>
-                </select>
                 <div th:if="${word.details.size() != 0}" class="form-control result">
                     <div th:if="${word.pronounce != null && !word.pronounce.isEmpty()}">
                         <span>/</span>
