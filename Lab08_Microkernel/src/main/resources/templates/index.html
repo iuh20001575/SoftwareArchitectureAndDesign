@@ -35,8 +35,12 @@
         <form method="post" action="/translate" class="d-flex flex-1 translate">
             <div class="translate-item">
                 <select name="language" class="form-select" aria-label="Default select example">
-                    <option th:checked="${language.equalsIgnoreCase('en-vn') ? checked : null}" value="en-vn" >Tiếng anh - Tiếng Việt</option>
-                    <option th:checked="${language.equalsIgnoreCase('vn-en') ? checked : null}" value="vn-en">Tiếng Việt - Tiếng Anh</option>
+                    <option th:selected="${language.equalsIgnoreCase('en-vn')}" value="en-vn">Tiếng Anh - Tiếng Việt</option>
+                    <option th:selected="${language.equalsIgnoreCase('vn-en')}" value="vn-en">Tiếng Việt - Tiếng Anh</option>
+                    <option th:selected="${language.equalsIgnoreCase('fr-vn')}" value="fr-vn">Tiếng Pháp - Tiếng Việt</option>
+                    <option th:selected="${language.equalsIgnoreCase('vn-fr')}" value="vn-fr">Tiếng Việt - Tiếng Pháp</option>
+                    <option th:selected="${language.equalsIgnoreCase('ge-vn')}" value="ge-vn">Tiếng Đức - Tiếng Việt</option>
+                    <option th:selected="${language.equalsIgnoreCase('vn-ge')}" value="vn-ge">Tiếng Việt - Tiếng Đức</option>
                 </select>
                 <label class="d-flex">
                     <input name="word" class="form-control" th:field="${word.word}">

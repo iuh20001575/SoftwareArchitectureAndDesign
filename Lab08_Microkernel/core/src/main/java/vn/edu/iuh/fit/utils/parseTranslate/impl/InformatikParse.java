@@ -59,7 +59,6 @@ public class InformatikParse implements Parse {
             } else if (word == null) {
                 continue;
             } else if (typePattern.matcher(data).matches()) {
-
                 if (wordDetail != null) {
                     if (typeDetail != null && typeDetail.getExamples() != null && !typeDetail.getExamples().isEmpty()) {
                         wordDetail.addTypeDetail(typeDetail);
@@ -86,16 +85,10 @@ public class InformatikParse implements Parse {
             }
         }
 
-        System.out.println(word);
-        System.out.println(wordDetail);
-        System.out.println(typeDetail);
-
         if (word != null) {
             if (wordDetail != null)
                 wordDetail.addTypeDetail(typeDetail);
             word.addWordDetail(wordDetail);
-            System.out.println(word);
-
             map.put(word.getWord(), word);
         }
 
