@@ -373,3 +373,53 @@ Order Fail Mail
 </details>
 
 </details>
+
+<br />
+
+<details>
+<summary>🚀 Lab 08 - Microkernel Architecture Style</summary>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Requirement</summary>
+
+![Code](./Lab08_Microkernel/demo/requirement.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Project's structure</summary>
+
+![Code](./Lab08_Microkernel/demo/project_structure.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Core module</summary>
+
+![Code](./Lab08_Microkernel/demo/core_module.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Translate English to Vietnamese module</summary>
+
+![Code](./Lab08_Microkernel/demo/english_to_vietnamese_module.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Translate controller</summary>
+
+![Code](./Lab08_Microkernel/demo/translate_controller.png 'Code')
+
+</details>
+
+<details style="margin-left: 20px">
+    <summary>⭐ Implement</summary>
+
+![Code](./Lab08_Microkernel/demo/english_to_vietnamese_demo.png 'Code')
+![Code](./Lab08_Microkernel/demo/vietnamese_to_english_demo.png 'Code')
+
+</details>
+
+</details>
