@@ -10,7 +10,9 @@ public class GatewayConfig {
     @Bean
     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("quoting", r -> r.path("/quoting/**").uri("http://localhost:8081"))
+                .route("quoting", r -> r.path("/api/quoting/**").uri("http://localhost:8081"))
+                .route("login", r -> r.path("/api/auth/login").uri("http://localhost:8081"))
+                .route("auth", r -> r.path("/api/auth/**").uri("http://localhost:8081/api"))
                 .build();
     }
 }
