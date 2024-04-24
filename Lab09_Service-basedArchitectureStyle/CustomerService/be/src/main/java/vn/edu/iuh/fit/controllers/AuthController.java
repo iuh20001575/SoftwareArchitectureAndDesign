@@ -17,7 +17,7 @@ import vn.edu.iuh.fit.utils.JwtUtil;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/customer/auth")
 public class AuthController {
     private final CustomerService customerService;
     private final CustomerRepository customerRepository;

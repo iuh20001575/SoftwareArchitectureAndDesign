@@ -16,16 +16,19 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
+//@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class SecurityConfig {
-    private final String[] PUBLIC_ENDPOINTS = {"/api/auth/login", "/api/auth/register"};
+    private final String[] PUBLIC_ENDPOINTS = {"/api/customer/auth/login", "/api/customer/auth/register"};
     @Autowired
     private CustomJwtDecoder customJwtDecoder;
 
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.authorizeHttpRequests(request ->
-                request.requestMatchers(PUBLIC_ENDPOINTS).permitAll()
-                        .anyRequest().authenticated());
+        httpSecurity
+                .authorizeHttpRequests(request ->
+                        request.requestMatchers(PUBLIC_ENDPOINTS).permitAll()
+                                .anyRequest().permitAll());
 
         httpSecurity.oauth2ResourceServer(oauth2 ->
                 oauth2.jwt(jwtConfigurer ->
@@ -39,7 +42,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    JwtAuthenticationConverter jwtAuthenticationConverter(){
+    JwtAuthenticationConverter jwtAuthenticationConverter() {
         JwtGrantedAuthoritiesConverter jwtGrantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
         jwtGrantedAuthoritiesConverter.setAuthorityPrefix("");
 
@@ -50,7 +53,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    PasswordEncoder passwordEncoder(){
+    PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(10);
     }
 }

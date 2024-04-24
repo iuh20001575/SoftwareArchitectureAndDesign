@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/quoting")
+@RequestMapping("/api/customer/quoting")
 public class QuotingController {
     @GetMapping
     public ResponseEntity<?> index() {

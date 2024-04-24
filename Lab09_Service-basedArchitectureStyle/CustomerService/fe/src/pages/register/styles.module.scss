@@ -1,0 +1,94 @@
+.signup-form,
+.signup-image,
+.signin-form,
+.signin-image {
+    width: 50%;
+    overflow: hidden;
+}
+.signup-image {
+    margin: 0 55px;
+}
+.form-title {
+    margin-bottom: 33px;
+}
+.signup-image {
+    margin-top: 45px;
+}
+.figure {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form-submit {
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    &:hover {
+        background: darken(#6dabe4, 10%);
+    }
+}
+.signup-image-link {
+    font-size: 14px;
+    color: #222;
+    display: block;
+    text-align: center;
+}
+.term-service {
+    font-size: 13px;
+    color: #222;
+}
+.signup-form {
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-left: 34px;
+}
+.register-form {
+    width: 100%;
+}
+.agree-term {
+    display: inline-block;
+    width: auto;
+}
+.label-has-error {
+    top: 22%;
+}
+.error {
+    position: relative;
+    background: url('../images/unchecked.gif') no-repeat;
+    background-position-y: 3px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 20px;
+}
+.valid {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-top: -6px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    &:after {
+        font-family: 'Material-Design-Iconic-Font';
+        content: '\f269';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        font-size: 16px;
+        color: green;
+    }
+}
+.label-agree-term {
+    position: relative;
+    top: 0%;
+    transform: translateY(0);
+}
+.material-icons-name {
+    font-size: 18px;
+}
